@@ -17,6 +17,6 @@ namespace MyFirstCoreApi
                 {
                     webBuilder.UseStartup<Startup>();
                 })
-                .UseUnityServiceProvider();   //註冊Unity進入專案
+                .UseUnityServiceProvider();   //註冊Unity
     }
 }

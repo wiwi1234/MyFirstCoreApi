@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.Json;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MyFirstCoreData.Models;
 using MyFirstCoreService.Interface;
@@ -23,7 +17,7 @@ namespace MyFirstCoreApi.Controllers
 
         [HttpGet]
         [Authorize]
-        [ApiExplorerSettings(GroupName = "v1")]  //Version
+        [ApiExplorerSettings(GroupName = "v1")]
         [Route("{id}")]
         public ActionResult<Student> GetSingle(int id)
         {

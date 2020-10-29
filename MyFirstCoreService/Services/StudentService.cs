@@ -1,7 +1,5 @@
-﻿using System;
-using MyFirstCoreData.Models;
+﻿using MyFirstCoreData.Models;
 using MyFirstCoreData.Repository;
-using MyFirstCoreService;
 using MyFirstCoreService.Interface;
 
 namespace MyFirstCoreService

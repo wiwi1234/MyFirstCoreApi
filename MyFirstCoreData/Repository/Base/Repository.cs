@@ -41,6 +41,7 @@ namespace MyFirstCoreData.Repository
             DbContext.Add(entity);
             return entity;
         }
+
         //效能的關係 用不太到
         public void Create(IEnumerable<TEntity> entities)
         {
@@ -52,6 +53,7 @@ namespace MyFirstCoreData.Repository
         {
             this.Entity.Remove(entity);
         }
+
         //效能的關係 用不太到
         public void Delete(IEnumerable<TEntity> entities)
         {
@@ -63,10 +65,12 @@ namespace MyFirstCoreData.Repository
         {
             return _EntityQuery.FirstOrDefault(predicate);
         }
+
         public virtual IQueryable<TEntity> GetAll()
         {
             return _EntityQuery;
         }
+
         public virtual IQueryable<TEntity> GetAll(Expression<Func<TEntity, bool>> predicate)
         {
             return _EntityQuery.Where(predicate);
